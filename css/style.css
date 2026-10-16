@@ -149,6 +149,19 @@
   footer .follow .ic{display:flex;gap:12px;margin-left:10px}
   footer .follow a{width:54px;height:54px;border-radius:50%;background:#fff;display:grid;place-items:center;border:2px solid #fff}
   footer .best{font-size:18px;padding:8px 0 6px}
+  /* ===== footer: government website logo carousel (CSS only, pauses on hover/focus) ===== */
+  footer .logo-carousel{background:#274a5c;padding:26px 0;overflow:hidden}
+  footer .lc-track{display:flex;gap:10px;width:max-content;list-style:none;margin:0;padding:0 5px;animation:lc-scroll 40s linear infinite}
+  footer .logo-carousel:hover .lc-track,footer .logo-carousel:focus-within .lc-track{animation-play-state:paused}
+  footer .lc-track li{flex:0 0 auto;font-size:0;line-height:0;margin:0}
+  footer .lc-track a{display:flex;align-items:center;justify-content:center;width:166px;height:90px;background:#fff;border-radius:4px;padding:6px 10px}
+  footer .lc-track a:focus-visible{outline:3px solid #ffbf47;outline-offset:2px}
+  footer .lc-track img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+  @keyframes lc-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){
+    footer .logo-carousel{overflow-x:auto}
+    footer .lc-track{animation:none}
+  }
   footer .strip{background:#00205b;border-bottom:4px solid #6a2fb0}
   footer .strip .in{display:flex;justify-content:space-between;align-items:center;padding:13px 152px 13px 141px}
   footer .strip .lg{background:#fff;display:flex;align-items:center;justify-content:center;height:61px;padding:0 14px}
@@ -1318,3 +1331,18 @@ footer .banner .c-item{line-height:1.25}
 .bud-table .bud-group th{background:#eaf0fa;color:var(--navy);font-weight:700;text-align:left}
 .bud-table .bud-total th,.bud-table .bud-total td{background:#fff3e2;font-weight:700;color:var(--navy);border-top:2px solid var(--saffron)}
 @media (max-width:700px){.bud-table td:last-child{text-align:left}.bud-table .bud-total th{display:block}.bud-table thead th:last-child{text-align:left}}
+
+/* ===== homepage: Social Media section ===== */
+.social-sec{padding:44px 0 52px;background:#152a4e;color:#fff}
+.social-title h2{display:inline-block;margin:0;font-size:36px;line-height:1.2;color:#fff;padding-bottom:12px;border-bottom:4px solid #e3801c}
+.social-title p{margin:22px 0 0;max-width:62em;font-size:20px;line-height:1.65;color:#fff}
+.social-grid{list-style:none;margin:30px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.social-card{background:#fff;color:#0c1b36;border-radius:4px;display:flex;flex-direction:column;min-width:0;overflow:hidden}
+.social-card h3{margin:0;padding:20px 20px 8px;font-size:30px;font-weight:400;color:#0c1b36}
+.social-embed{height:520px;overflow:auto;padding:0 8px}
+.social-embed iframe{display:block;width:100%;max-width:100%;height:100%}
+.social-embed.tw-embed{padding:0 20px}
+.social-embed.tw-embed a{color:#1a47a3;font-size:18px}
+.social-open{display:block;padding:14px 20px;border-top:1px solid #d5deea;font-size:20px;font-weight:600;color:#1a47a3;text-decoration:none}
+.social-open:hover,.social-open:focus-visible{text-decoration:underline}
+@media (max-width:600px){.social-title h2{font-size:28px}.social-title p{font-size:17px}}

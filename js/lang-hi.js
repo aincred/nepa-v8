@@ -1,5 +1,14 @@
 /* Hindi strings for js/lang.js. Key = exact English text, value = Hindi. Add a pair to translate more text. */
 window.NEPA_HI = {
+ "Social Media": "सोशल मीडिया",
+ "Follow the Academy for the latest posts. The feeds are shown by each platform and open on its own website.": "ताज़ा पोस्ट के लिए अकादमी को फ़ॉलो करें। फ़ीड प्रत्येक प्लेटफ़ॉर्म द्वारा दिखाई जाती हैं और उसी की वेबसाइट पर खुलती हैं।",
+ "Open on X": "X पर खोलें",
+ "Open on Facebook": "फ़ेसबुक पर खोलें",
+ "Open on Instagram": "इंस्टाग्राम पर खोलें",
+ " (external site, opens in new tab)": " (बाहरी साइट, नए टैब में खुलती है)",
+ "Photos and updates from North Eastern Police Academy.": "उत्तर पूर्वीय पुलिस अकादमी की तस्वीरें और अपडेट।",
+ "Pictures and short videos from training and events.": "प्रशिक्षण और कार्यक्रमों की तस्वीरें और छोटे वीडियो।",
+ "Important Government of India websites": "भारत सरकार की महत्वपूर्ण वेबसाइटें",
  "Skip to main content": "मुख्य सामग्री पर जाएँ",
  "Language": "भाषा",
  "Accessibility options": "सुगम्यता विकल्प",
