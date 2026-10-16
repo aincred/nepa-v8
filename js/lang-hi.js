@@ -19,7 +19,7 @@ window.NEPA_HI = {
  "High contrast": "उच्च कंट्रास्ट",
  "North Eastern Police Academy logo": "उत्तर पूर्वीय पुलिस अकादमी का प्रतीक चिह्न",
  "Main navigation": "मुख्य नेविगेशन",
- "Ministry/Department": "मंत्रालय/विभाग",
+ "Ministry": "मंत्रालय",
  "About Us": "हमारे बारे में",
  "Our Teams": "हमारी टीमें",
  "Offerings": "सेवाएँ एवं पाठ्यक्रम",
