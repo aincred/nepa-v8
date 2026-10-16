@@ -1,0 +1,150 @@
+<!-- Shared header: skip link, government bar, logo, main menu, search, notice ticker -->
+<!-- Menu design (loads after style.css so it wins) -->
+<link rel="stylesheet" href="css/nav-dropdown.css">
+<link rel="stylesheet" href="css/nav-mobile.css">
+<div class="gov-bar">
+  <div class="wrap">
+    <div class="grp">
+      <div class="it"><span class="hi" lang="hi">भारत सरकार</span><span class="en" lang="en" data-no-i18n>GOVERNMENT OF INDIA</span></div>
+      <div class="it"><span class="hi" lang="hi">गृह मंत्रालय</span><span class="en" lang="en" data-no-i18n>MINISTRY OF HOME AFFAIRS</span></div>
+    </div>
+    <div class="gb-tools">
+    <a class="skip-vis" href="#main">Skip to main content</a>
+    <div class="lang-sw" role="group" aria-label="Language">
+      <button type="button" lang="hi" data-lang="hi" aria-pressed="false">हिन्दी</button>
+      <button type="button" lang="en" data-lang="en" aria-pressed="true">English</button>
+    </div>
+    <div class="a11y-wrap">
+      <button class="a11y" type="button" aria-label="Accessibility options" aria-expanded="false" aria-controls="a11y-panel">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><circle cx="13" cy="4" r="2"/><path d="M11 7h4l-.5 4h3.2l2 5.5-1.9.7-1.4-3.7h-4.2l-.4 2.5A4.5 4.5 0 1 1 8 11.4l.2 2a2.5 2.5 0 1 0 2.6 2.9l1.2-8.3z"/></svg>
+      </button>
+      <div class="a11y-panel" id="a11y-panel" role="group" aria-label="Text size and contrast" hidden>
+        <button type="button" data-a11y="inc" aria-label="Increase text size">A<sup>+</sup></button>
+        <button type="button" data-a11y="reset" aria-label="Normal text size">A</button>
+        <button type="button" data-a11y="dec" aria-label="Decrease text size">A<sup>-</sup></button>
+        <button type="button" class="a11y-contrast" data-a11y="contrast" aria-label="High contrast" aria-pressed="false">A</button>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<span class="sr-only" id="lang-status" role="status" aria-live="polite"></span>
+<header class="logo-row">
+  <div class="wrap">
+    <div class="logo-left">
+      <img class="emblem-img" src="images/logo/emblem-india.png" alt="State Emblem of India, Satyameva Jayate" width="60" height="100">
+      <div class="vsep"></div>
+      <img class="nepa-logo" src="images/logo/3.png" alt="North Eastern Police Academy logo" width="380" height="358">
+      <div class="vsep"></div>
+      <div class="title-block">
+        <div class="hi" lang="hi">उत्तर पूर्वीय पुलिस अकादमी</div>
+        <div class="en" lang="en" data-no-i18n>North Eastern Police Academy</div>
+      </div>
+    </div>
+    <div class="logo-right" role="group" aria-label="Government initiatives">
+      <img class="lg-azadi" src="images/logo/azadi-amrit-mahotsav.png" alt="Azadi Ka Amrit Mahotsav, 75 years of independence" width="164" height="95">
+      <img class="lg-iyc" src="images/logo/iyc-2025.png" alt="International Year of Cooperatives 2025: Cooperatives Build a Better World" width="96" height="110">
+      <img class="lg-cd" src="images/logo/cyber-dost.png" alt="Cyber Dost" width="100" height="100">
+    </div>
+  </div>
+</header>
+
+<nav class="menu" id="site-nav" aria-label="Main navigation">
+  <div class="wrap">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-list"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg><span>Menu</span></button>
+    <ul id="menu-list">
+      <li><a class="fs" href="#" aria-label="Full screen"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#fff" stroke-width="2"><path d="M2 8V2h6M14 2h6v6M20 14v6h-6M8 20H2v-6M2 2l6 6M20 2l-6 6M20 20l-6-6M2 20l6-6"/></svg></a></li>
+      <li><a class="home" href="index.html" aria-label="Home"><svg width="30" height="28" viewBox="0 0 30 28" fill="#fff"><path d="M15 1 1 14h4v12h7v-8h6v8h7V14h4L15 1z"/></svg></a></li>
+
+      <!-- Ministry / Department -->
+      <li><a href="https://www.mha.gov.in" target="_blank" rel="noopener noreferrer">Ministry/Department<span class="sr-only"> (external site, opens in new tab)</span></a></li>
+
+      <!-- About Us -->
+      <li class="has-sub">
+        <a href="#" class="sub-toggle" aria-haspopup="true" aria-expanded="false">About Us <span class="plus" aria-hidden="true">+</span></a>
+        <ul class="sub">
+          <li><a href="about.html">About Us</a></li>
+          <li class="has-sub">
+            <a href="#" class="sub-toggle" aria-haspopup="true" aria-expanded="false">Our Teams <span class="plus" aria-hidden="true">+</span></a>
+            <ul class="sub">
+              <li><a href="directors.html">Director</a></li>
+              <li><a href="faculty-indoor.html">Indoor Faculty</a></li>
+              <li><a href="faculty-outdoor.html">Outdoor Faculty</a></li>
+            </ul>
+          </li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="awards.html">Awards</a></li>
+        </ul>
+      </li>
+
+      <!-- Offerings -->
+      <li class="has-sub">
+        <a href="#" class="sub-toggle" aria-haspopup="true" aria-expanded="false">Offerings <span class="plus" aria-hidden="true">+</span></a>
+        <ul class="sub">
+          <li class="has-sub">
+            <a href="#" class="sub-toggle" aria-haspopup="true" aria-expanded="false">Courses <span class="plus" aria-hidden="true">+</span></a>
+            <ul class="sub">
+              <li><a href="basiccourse.html">Basic Course</a></li>
+              <li><a href="inservicecourse.html">In-Service Course</a></li>
+            </ul>
+          </li>
+          <li><a href="tender.html">Tenders</a></li>
+          <li><a href="recruitment.html">Vacancies</a></li>
+        </ul>
+      </li>
+
+      <!-- Documents -->
+      <li class="has-sub">
+        <a href="#" class="sub-toggle" aria-haspopup="true" aria-expanded="false">Documents <span class="plus" aria-hidden="true">+</span></a>
+        <ul class="sub">
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="recruitment-rules.html">Recruitment Rules</a></li>
+          <li><a href="forms.html">Forms</a></li>
+        </ul>
+      </li>
+
+      <!-- Media -->
+      <li class="has-sub">
+        <a href="#" class="sub-toggle" aria-haspopup="true" aria-expanded="false">Media <span class="plus" aria-hidden="true">+</span></a>
+        <ul class="sub">
+          <li><a href="media.html">Media Overview</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="videos.html">Videos</a></li>
+        </ul>
+      </li>
+
+      <!-- Connect -->
+      <li class="has-sub">
+        <a href="#" class="sub-toggle" aria-haspopup="true" aria-expanded="false">Connect <span class="plus" aria-hidden="true">+</span></a>
+        <ul class="sub">
+          <li><a href="contact.html">Contact Us</a></li>
+         <li class="has-sub">
+  <a href="#" class="sub-toggle" aria-haspopup="true" aria-expanded="false">RTI <span class="plus" aria-hidden="true">+</span></a>
+  <ul class="sub">
+    <li><a href="rti.html">RTI</a></li>
+    <li><a href="rti-replies.html">RTI Reply</a></li>
+    <li><a href="rti-proactive-disclosure.html">RTI Proactive Disclosure</a></li>
+  </ul>
+</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Search section -->
+<section class="search-row" aria-label="Site search">
+  <div class="wrap">
+    <form class="site-search" role="search" action="search.html" method="get">
+      <label class="sr-only" for="site-search-input">Search the NEPA website</label>
+      <input id="site-search-input" class="ss-input" type="search" name="q" placeholder="Search courses, tenders, notices, forms…" autocomplete="off" required>
+      <button class="ss-btn" type="submit" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+        <span>Search</span>
+      </button>
+    </form>
+  </div>
+</section>
+
+<div class="ticker" id="ticker" role="region" aria-label="Notice"><div class="track"><span class="tk-msg">Welcome to NEPA, Ministry of Home Affairs, Government of India — fostering professional excellence in policing.</span><span class="tk-sep" aria-hidden="true">&#9670;</span><span class="tk-msg">Promoting ethical, citizen-centric policing through modern training and scientific investigation techniques.</span><span class="tk-sep" aria-hidden="true">&#9670;</span><span class="tk-msg">Visit the NEPA website for the latest training calendar, course announcements, nominations and joining instructions.</span></div><button type="button" class="tk-btn" aria-label="Pause scrolling notice" aria-pressed="false"><svg class="i-pause" width="16" height="16" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4v12M14 4v12" stroke="#00205b" stroke-width="3.2" stroke-linecap="round"/></svg><svg class="i-play" width="16" height="16" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 3.5v13l11-6.5z" fill="#00205b"/></svg></button></div>

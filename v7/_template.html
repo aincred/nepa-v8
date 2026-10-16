@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- NEW PAGE TEMPLATE.
+     1. Copy this file and rename it, e.g.  my-new-page.html   (lower case, no spaces, use - between words)
+     2. Change only the lines marked  CHANGE ME.
+     3. Do NOT touch / reorder the lines marked  KEEP.  They are what make the header and footer load fast.
+     4. Run  python check_site.py  - it must say PASS. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- KEEP: the 4 lines below, in this order -->
+<link rel="stylesheet" href="partials/loader.css">
+<script src="partials/loader.js?v=hi2"></script>
+<script src="js/partials-bundle.js?v=hi2"></script>
+<script src="js/include.js?v=hi2"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CHANGE ME: one sentence about this page.">
+<meta name="theme-color" content="#00205b">
+<title>CHANGE ME: Page name – North Eastern Police Academy</title>
+<link rel="stylesheet" href="css/style.css">
+<!-- Favicon (NEPA logo replaces the default globe icon) -->
+<link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+</head>
+<body>
+<!-- KEEP: header and back-to-top placeholders (exactly once each) -->
+<div data-include="partials/header.html"></div>
+<div data-include="partials/backtotop.html"></div>
+
+<!-- CHANGE ME: everything between <main> and </main> is the page content -->
+<main id="main" tabindex="-1">
+  <section class="wrap">
+    <h1>CHANGE ME: Page heading</h1>
+    <p>CHANGE ME: Page text.</p>
+  </section>
+</main>
+
+<!-- KEEP: footer placeholder, noscript note and the 3 scripts below, in this order -->
+<div data-include="partials/footer.html"></div>
+
+<noscript><p style="padding:16px;background:#fff3cd;color:#3b2f00;font-size:16px">JavaScript is needed to load the header and footer of this page. Please enable JavaScript.</p></noscript>
+<script src="js/main.js?v=hi2"></script>
+<script src="js/lang.js?v=hi2"></script>
+<script src="partials/backtotop.js"></script>
+<!-- Page-only scripts (a search box, a photo viewer ...) go here, AFTER the 3 lines above -->
+</body>
+</html>

@@ -1,0 +1,8 @@
+/* Back to top */
+.to-top{position:fixed;right:24px;bottom:24px;width:48px;height:48px;border-radius:50%;border:0;background:#1a3a6b;color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:900;transition:background .2s,transform .2s}
+.to-top[hidden]{display:none}
+.to-top:hover{background:#e07b00;transform:translateY(-2px)}
+.to-top:focus-visible{outline:3px solid #f5a623;outline-offset:3px}
+@media(max-width:640px){.to-top{right:14px;bottom:14px;width:44px;height:44px}}
+@media(prefers-reduced-motion:reduce){.to-top{transition:none}}
+@media print{.to-top{display:none}}

@@ -1,0 +1,8 @@
+{
+  "_help": "One entry per video. 'file' = an .mp4 in this folder (put a poster picture in videos/posters/ and name it in 'poster'). Optional: 'captions' = a .vtt file in this folder, 'youtube' = a YouTube video ID instead of 'file'. 'transcript' is the text description shown under the video (needed for accessibility). Newest year first is automatic.",
+  "videos": [
+    {"year": "2026", "title": "Parade and Training 2026", "file": "parade-and-training-2026.mp4", "poster": "posters/parade-and-training-2026.jpg", "duration": "0:10", "description": "Sample clip: parade and training activities at the Academy.", "transcript": "No audio. Photographs of the parade ground and training activities at the North Eastern Police Academy, Umsaw."},
+    {"year": "2025", "title": "Training in Action", "file": "training-in-action.mp4", "poster": "posters/training-in-action.jpg", "duration": "0:10", "description": "Sample clip: indoor and outdoor classes, firing practice and riot drill.", "transcript": "No audio. Photographs of an indoor class, an outdoor class, firing practice and a riot drill at the Academy."},
+    {"year": "2024", "title": "Campus Glimpses", "file": "campus-glimpses.mp4", "poster": "posters/campus-glimpses.jpg", "duration": "0:10", "description": "Sample clip: academy building, campus, parade ground and the hills around Umsaw.", "transcript": "No audio. Photographs of the academy building, the campus, the parade ground and the surrounding hills."}
+  ]
+}

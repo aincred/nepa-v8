@@ -1,0 +1,100 @@
+/* nav-dropdown.css — new dropdown design
+   Link AFTER style.css and responsive-fix.css:
+   <link rel="stylesheet" href="nav-dropdown.css">
+   Desktop only (>= 901px). The mobile app-style menu is untouched.
+   nav-dropdown.js needs no changes. */
+
+@media (min-width:901px){
+
+  /* ---- panel: white card, saffron top edge, soft shadow ---- */
+  nav.menu #menu-list .sub{
+    background:#fff;
+    min-width:260px;
+    padding:8px 0;
+    border:0;
+    border-top:3px solid var(--saffron);
+    border-radius:0 0 10px 10px;
+    box-shadow:0 14px 30px rgba(0,16,60,.28);
+    z-index:1000;
+  }
+  /* flyout (3rd level): rounded on all corners, aligned with parent row */
+  nav.menu #menu-list .sub .sub{
+    top:-11px;
+    border-radius:10px;
+  }
+
+  /* subtle entrance animation */
+  nav.menu #menu-list li:hover > .sub,
+  nav.menu #menu-list li.open > .sub{
+    animation:navDrop .18s ease-out;
+  }
+  @keyframes navDrop{
+    from{ opacity:0; transform:translateY(-6px); }
+    to{   opacity:1; transform:none; }
+  }
+
+  /* ---- rows ---- */
+  nav.menu #menu-list .sub li{
+    border-top:1px solid #e8edf6;
+  }
+  nav.menu #menu-list .sub li:first-child{ border-top:0; }
+
+  nav.menu #menu-list .sub a{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    padding:0 20px;
+    min-height:46px;
+    font-size:15.5px;
+    font-weight:500;
+    color:#0b2f73;
+    background:transparent;
+    white-space:nowrap;
+    transition:background .15s ease, color .15s ease, padding-left .15s ease;
+  }
+  nav.menu #menu-list .sub a:hover,
+  nav.menu #menu-list .sub a:focus,
+  nav.menu #menu-list .sub li.open > a{
+    background:#eef3fc;
+    color:#001a4d;
+    padding-left:24px;
+    box-shadow:inset 4px 0 0 var(--saffron);
+  }
+  nav.menu #menu-list .sub a:focus-visible{
+    outline:3px solid #001a4d;
+    outline-offset:-3px;
+  }
+
+  /* ---- chevron replaces the +/− text (JS keeps working) ---- */
+  nav.menu #menu-list .plus{
+    display:inline-block;
+    width:8px; height:8px;
+    margin:0 0 3px 8px;
+    padding:0;
+    font-size:0;               /* hides the + / − character */
+    line-height:0;
+    background:none;
+    border:solid currentColor;
+    border-width:0 2px 2px 0;
+    border-radius:0;
+    transform:rotate(45deg);   /* ▾ */
+    transition:transform .2s ease;
+  }
+  nav.menu #menu-list li.open > a > .plus{ transform:rotate(-135deg); }   /* ▴ */
+
+  /* nested items point right (▸) */
+  nav.menu #menu-list .sub .plus{ margin:0; }
+  nav.menu #menu-list .sub .plus,
+  nav.menu #menu-list .sub li.open > a > .plus{ transform:rotate(-45deg); }
+  /* menu items near the right edge open their flyouts leftwards, so point left (◂) */
+  nav.menu #menu-list > li:nth-last-child(-n+2) .sub .plus,
+  nav.menu #menu-list > li:nth-last-child(-n+2) .sub li.open > a > .plus{ transform:rotate(135deg); }
+}
+
+@media (prefers-reduced-motion:reduce){
+  nav.menu #menu-list li:hover > .sub,
+  nav.menu #menu-list li.open > .sub{ animation:none; }
+  nav.menu #menu-list .sub a,
+  nav.menu #menu-list .plus{ transition:none; }
+}
